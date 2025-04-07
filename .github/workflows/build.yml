@@ -15,16 +15,16 @@ jobs:
     - name: Build Kernel
       uses: dabao1955/kernel_build_action@main
       with:
-          kernel-url: https://github.com/Dark-Matter7232/kernel_msm-4.14-nabu
-          kernel-dir: msm-4.14
+          kernel-url: https://github.com/dev-harsh1998/android_device_xiaomi_nabu
+          kernel-dir: lineage-22.1
           kernel-branch: udc-new
           config: nabu_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
-          ksu: true
+          ksu: false
           ksu-version: main
-          android-version: 12
+          android-version: 15
           aosp-clang-version: r383902
           disable-lto: true
           anykernel3: true
